@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web2.0 final project</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+<!--  main container-->
+<div id="container">
+	<div id="top">
+		<div style="width:300px;text-align:center;float:left">
+			<div style="height:1em"> </div>
+			<div id="keyspace_cmd">Keyspace</div>
+			<img src='database.png'>
+			<select id="keyspace_select" onchange='keyspace_submit(this.value,this.selectedIndex)'>
+			</select>
+			<img src='refresh.png' title="reload keyspaces" style="cursor:pointer" onclick="load_keyspacenames()">
+			<img src='plus.png' title="create keyspace" style="cursor:pointer" onclick="input_new_keyspace()">
+			<img src='trash.png' title="drop keyspace" id="drop_keyspace">
+		</div>
+		<div style="width:300px;text-align:right;float:right;height:3em;font-family:courier">
+		«Basic Technologies for Web Compliance Engineering. Developing and
+testing Web 2.0 applications»<br>by Mohammad Saifullah & Diandian Tsai
+		</div>
+		<div style="text-align:center;float:center;">
+		<h1>My CQL Tool</h1>
+		</div>
+	</div>
+	<div id="bottom-container">
+		<div id="bottom-left-container">
+			<div style="clear:both">
+				<div id="tablesOverviewIcons" style="float:right;visibility:hidden;">
+					<img src='refresh.png' title="reload tables" style="cursor:pointer" onclick="load_tablenames()">
+					<img src='plus.png' title="create table" style="cursor:pointer" onclick="input_new_table()">
+				</div>
+				<div id="tablesOverviewTitle" style="height:1.5em;float:center">
+				Select a keyspace from above
+				</div>
+			</div>
+			
+			<div style="height:2px"></div>
+			
+			<!--  keyspace info: tables overview-->
+			<div id="tablesOverview" class="scroll" style="max-height:calc(100% - 3em);padding-left:20px">
+			</div>
+		</div>
+		<div id="bottom-right-container">
+			<div id="queryCommandTitle">
+			CQL statement:
+			</div>
+			<textarea id="queryCommand" wrap="logical" placeholder="type in CQL query"></textarea>
+			<input id="queryRunBtn" type="button" value="Run CQL &raquo;" onclick="query_submit()">	
+			<div id="queryResult">
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+
+<script src="displayQueryResult.js"></script>
+<script src="displayTables.js"></script>
+<script src="selectKeyspace.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+html, body, #container { 
+	height:100%;
+	margin:0px;
+	padding:0px;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size:12px;
+}
+body > #container { height:auto;min-height:100%;}
+
+td {
+    vertical-align:middle;
+}
+.tftable {width:100%;border-width:0px; border-collapse: collapse; margin-top:10px;}
+.tftable th {background-color:#acc8cc;padding: 3px;text-align:left;}
+.tftable td {padding: 2px;}
+/*.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}*/
+/*.tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}*/
+/*.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}*/
+.tftable tr:nth-child(odd)	{background-color:#ffffff;}
+.tftable tr:nth-child(even)	{background-color:#F5FAFF;}
+.tftable tr:hover {background-color:#eeeeee;}
+
+div.scroll {
+	width:auto;
+	height:auto;
+	max-height:100%;
+	overflow: auto;
+}
+#keyspace_select {
+	width:200px;
+}
+
+#queryCommandTitle {
+	height:1.5em;
+	width:calc(100% - 15px);
+}
+#queryCommand {
+	min-height:5em;
+	max-height:10em;
+	height:3em;
+	max-width:calc(100% - 15px);
+	width:calc(100% - 15px);
+	border:1px solid #d3d3d3;
+/*	border-radius:5px;*/
+/*	box-shadow: 2px 2px 2px #888888;*/
+	padding:5px;
+}
+#queryResult
+{
+	background-color: #ffffff;
+	height:calc(100% - 5em - 1.5em - 70px);
+	width:calc(100% - 15px);
+/*	border:1px solid #d3d3d3;*/
+	overflow:auto;
+/*	border-radius:5px;*/
+/*	box-shadow: 2px 2px 2px #888888;*/
+/*	padding:5px;*/
+	margin-top:20px;
+}
+
+#top {
+	background-color:#474747;
+	color:white;
+	height:4.5em;
+	width:auto;
+	padding:5px;
+}
+#bottom-container {
+	min-height:500px;
+	min-width:700px;
+	height:calc(100vh - 4.5em - 10px);
+	width:100%;
+}
+#bottom-right-container {
+	float:right;
+	height:calc(100% - 10px - 20px);
+	width:calc(100% - 250px - 20px - 20px - 10px);	/*100% minus width,padding,margin of bottom-left-container and self-padding*/
+	padding:5px;
+	margin-top:10px;
+}
+#bottom-left-container {
+	float:left;
+	background-color:#eeeeee;
+	height:calc(100% - 20px - 20px);
+	width:250px;
+	padding:10px;
+	margin:10px;
+	border-radius:5px;
+	box-shadow: 3px 3px 3px #888888;
+}

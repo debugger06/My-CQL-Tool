@@ -1,0 +1,21 @@
+
+Create Keyspace
+
+|———————————————————————|———————————————————————————————————————————————————————————————————————————————————————|
+|Use Case Name		| Create Keyspace									|
+|———————————————————————|———————————————————————————————————————————————————————————————————————————————————————|
+|Participating Actor	| User											|
+|———————————————————————|———————————————————————————————————————————————————————————————————————————————————————|
+|Flow of Events		| 1. User opens the Client Application.							|
+|			| 2. User writes the Query and press execute.						|
+|			| 3. Application server receives the request.						|
+|			| 4. Application server executes the query and Accept proper response from		|
+|			|    Cassandra cluster.									|
+|			| 5. Server Parses the response and forwards it to the Client in Jason format.		|
+|———————————————————————|———————————————————————————————————————————————————————————————————————————————————————|
+|Entry Condition	| User opens the Client App								|
+|———————————————————————|———————————————————————————————————————————————————————————————————————————————————————|
+|Exit Condition		| Query result displayed on the client terminal						|
+|———————————————————————|———————————————————————————————————————————————————————————————————————————————————————|
+|Quality Requirement	|Query has been executed in certain time and appropriate feed back received by client	|
+|———————————————————————|———————————————————————————————————————————————————————————————————————————————————————|
