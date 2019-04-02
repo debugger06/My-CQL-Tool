@@ -10,4 +10,3 @@ The following functionality was implemented:
 5. Error recovery.
 6. The communication client-server is expected to happen via RESTful web services.
 
-Technology used: HTML5, CSS3, Jquery, Node.js, express.js, Cassandra.
