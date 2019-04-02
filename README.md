@@ -1,5 +1,5 @@
 # My-CQL-Tool
-My CQL Tool, Which is the ultimate front-end Management for Cassandra Database.
+My CQL Tool, Which is the ultimate front-end Management for Cassandra .
 
 The requirement was to Build a web application that allows the communication with a NOSQL database (Cassandra). So in short a tool similar to phpMyadmin for NOSQL database.
 The following functionality was implemented:
